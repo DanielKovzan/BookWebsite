@@ -13,6 +13,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 * {
   box-sizing: border-box;
+  font-family: "Courier New", serif;
 }
 
 .row {
@@ -63,7 +64,7 @@ img {
       <div class="text">
         <h1>Essential Judaism<br> by George Robinson<br></h1>
         <button onclick="location.href = 'reviewEJ.html';" class="btn">Send a Review!</button><br><br>
-        <button id="reviewEJ" onclick="SeeOtherReviews(id)" class="btn">See Other Reviews!</button>
+        <button onclick="sessionStorage.setItem('BookName', 'Essential Judaism'), location.href = 'otherReviews.html', sessionStorage.setItem('selectedBookId', 2)" class="btn">See Other Reviews!</button>
       </div>
     </div>
 <br>
@@ -74,7 +75,7 @@ img {
       <div class="text">
         <h1>Fifty Shades Darker<br> by E L James<br></h1>
         <button class="btn" onclick="location.href = 'reviewFSD.html';">Send a Review!</button><br><br>
-        <button id="reviewFSD" class="btn" onclick="SeeOtherReviews(id)">See Other Reviews!</button>
+        <button class="btn" onclick="sessionStorage.setItem('BookName', 'Fifty Shades Darker'), location.href = 'otherReviews.html', sessionStorage.setItem('selectedBookId', 3)">See Other Reviews!</button>
       </div>
     </div>
 <br>
@@ -85,7 +86,7 @@ img {
       <div class="text">
         <h1>The Catholic Bible<br> by Moses<br></h1>
         <button class="btn" onclick="location.href = 'reviewBB.html';">Send a Review!</button><br><br>
-        <button id="reviewBB" class="btn" onclick="SeeOtherReviews(id)">See Other Reviews!</button>
+        <button class="btn" onclick="sessionStorage.setItem('BookName', 'The Bible'), location.href = 'otherReviews.html', sessionStorage.setItem('selectedBookId', 1)">See Other Reviews!</button>
       </div>
     </div>
 <br>
@@ -96,7 +97,7 @@ img {
       <div class="text">
         <h1>Ghost Raptor Seduction<br> by Eden Redd<br></h1>
         <button class="btn" onclick="location.href = 'reviewGRS.html';">Send a Review!</button><br><br>
-        <button id="reviewGRS" class="btn" onclick="SeeOtherReviews(id)">See Other Reviews!</button>
+        <button class="btn" onclick="sessionStorage.setItem('BookName', 'Ghost Raptor Seduction'), location.href = 'otherReviews.html', sessionStorage.setItem('selectedBookId', 4)">See Other Reviews!</button>
       </div>
     </div>
 
@@ -109,7 +110,7 @@ img {
 
 <script>
 function SeeOtherReviews() {
-  let x = id.toString();
+  
 }
 </script>
 </html>
